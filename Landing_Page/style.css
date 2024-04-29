@@ -40,7 +40,7 @@ nav{
     left: 0;
     width: 0;
     height: 100%;
-    border-bottom: 3px solid #086bdb;
+    border-bottom: 3px solid #027794;
     transition: 0.4s linear;
 }
 .menu a:hover::before{
