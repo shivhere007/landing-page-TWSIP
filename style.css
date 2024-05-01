@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)), url('images/home-back.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    padding-top: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 3px solid #027794;
+    transition: 0.4s linear;
+}
+.menu a:hover::before{
+    width: 90%;
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    background: #027794;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.4s;
+}
+.register a:hover{
+    background: transparent;
+    border: 1px solid #027794 ;
+}
+.content{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.content span{
+    font: 1em;
+    letter-spacing: 4px;
+}
+.content h1{
+    font-size: 7em;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+.content h2{
+    font-size: 1.5em;
+}
+.content a{
+    text-decoration: none;
+    background: #027794;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    position: relative;
+    transition: 0.4s;
+}
+.content a:hover{
+    background: transparent;
+    border: 1px solid white ;
+}
+main{
+    padding: 30px 0 50px 0;
+    background: #ebf6f8;
+}
+main h2{
+    font-size: 2.3em;
+    text-align: center;
+    color: #087f9c;
+}
+main p{
+    font-size: 18px;
+    text-align: center;
+    padding: 0 0 20px 0;
+    font-style: italic;
+    color: #3d3a3a;
+}
+.blog-gallery{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-style: italic;
+    color: #3d3a3a;
+}
+.blog-gallery img{
+    flex-wrap: wrap;
+    width: 350px;
+    height: 250px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+.offer{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(35,71,103,0.3),rgba(35,71,103,0.1)), url('images/img.jpg');
+    background-size: cover;
+    color: white;
+}
+.offer-content{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    padding-left: 400px;
+    text-align: right;
+}
+.offer-content h2{
+    font-size: 2.3em;
+}
+.offer-content p{
+    font-size: 16px;
+}
+.offer-content a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    border: 2px solid white;
+}
+.services{
+    padding: 30px 0 100px 0;
+    background: #ebf6f8;
+}
+.services-content h2{
+    font-size: 2.3em;
+    text-align: center;
+    color: #087f9c;
+}
+.services-content p{
+    font-size: 18px;
+    text-align: center;
+    padding: 0 0 55px 0;
+    font-style: italic;
+    color: #3d3a3a;
+}
+.services-image{
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.services-image div{
+    flex-wrap: wrap;
+    width: 500px;
+    height: 440px;
+}
+.display1{
+    background: url('images/maldives1.jpg');
+    background-size: cover;
+}
+.display2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.display2 div{
+    flex-wrap: wrap;
+    width: 250px;
+    height: 220px;
+}
+.display-card-txt{
+    background-color: aliceblue;
+    text-align: center;
+    padding-top: 40px;
+}
+.display-card-txt i{
+    color: #087f9c;
+    font-size: 2.4em;
+}
+.display-card-txt h4{
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+.display-card-txt p{
+    font-size: 16px;
+}
+.display-card1{
+    background: url('images/wp9474018-maldives-4k-wallpapers.jpg');
+    background-size: cover;
+}
+.display-card2{
+    background: url('images/couple.jpg');
+    background-size: cover;
+}
+footer{
+    background: #292828;
+    width: 100%;
+    height: 150px;
+    color: white;
+    text-align: center;
+    padding-top: 45px;
+}
+footer h4{
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+.logos a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 20px;
+    padding-bottom: 15px;
+}
+footer p a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #ebf6f8;
+    padding-top: 15px;
+}
